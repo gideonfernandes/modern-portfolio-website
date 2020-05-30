@@ -1,0 +1,92 @@
+@import 'config';
+@import 'utilities';
+
+// General styles
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Dosis', sans-serif;
+	line-height: 1.6;
+	background-color: white;
+}
+
+h2, h3, h4 {
+	text-transform: uppercase;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-color;
+}
+
+// Logo
+#logo {
+	width: 90px;
+	height: 90px;
+}
+
+// Header styles
+#header {
+	// Header Home styles
+	&-home {
+		color: white;
+		background: $bg-image no-repeat center right/cover;
+		height: 100vh;
+
+		// Header Content styles
+		#header-content {
+			text-align: center;
+			padding-top: 17%;
+
+			& > h1 {
+				font-size: 4rem;
+			}
+		}
+	}
+	// Header Inner styles
+	&-inner {
+		
+	}
+}
+
+// Main Nav styles
+#main-nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+
+	& > ul {
+		display: flex;
+	}
+
+	& > ul > li {
+		padding: 1rem 1.5rem;
+	}
+
+	& > ul > li > a {
+		text-transform: uppercase;
+		color: white;
+		padding-bottom: 0.5rem;
+		border-bottom: 3px solid transparent;
+		transition: border-color 0.5s ease-in;
+
+		&:hover {
+			border-color: $medium-color;
+		}
+
+		&.current {
+			border-color: $main-color;
+		}
+	}
+}

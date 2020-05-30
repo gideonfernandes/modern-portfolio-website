@@ -1,0 +1,91 @@
+.container {
+  max-width: 1280px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 1.5rem; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  border: 0;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in; }
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00; }
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #ffbc00; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 1.7rem; }
+
+.text-center {
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background-color: white; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+#logo {
+  width: 90px;
+  height: 90px; }
+
+#header-home {
+  color: white;
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  height: 100vh; }
+  #header-home #header-content {
+    text-align: center;
+    padding-top: 17%; }
+    #header-home #header-content > h1 {
+      font-size: 4rem; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav > ul {
+    display: flex; }
+  #main-nav > ul > li {
+    padding: 1rem 1.5rem; }
+  #main-nav > ul > li > a {
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.5s ease-in; }
+    #main-nav > ul > li > a:hover {
+      border-color: #ccc; }
+    #main-nav > ul > li > a.current {
+      border-color: #ffbc00; }
+
+/*# sourceMappingURL=main.css.map */

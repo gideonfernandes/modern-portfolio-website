@@ -1,0 +1,49 @@
+.container {
+	max-width: $website-width;
+	overflow: hidden;
+	margin: auto;
+	padding: 0 1.5rem;
+}
+
+%btn-shared {
+	display: inline-block;
+	border: 0;
+	padding: 0.8rem 2rem;
+	cursor: pointer;
+	transition: all 0.5s ease-in;
+}
+
+.btn {
+	&-main {
+		@extend %btn-shared;
+		color: $dark-color;
+		background-color: $main-color;
+	}
+
+	&-light {
+		@extend %btn-shared;
+		color: $dark-color;
+		background-color: $light-color;
+	}
+
+	&-dark {
+		@extend %btn-shared;
+		color: $light-color;
+		background-color: $dark-color;
+	}
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+	background-color: $main-color;
+}
+
+.lead {
+	font-size: 1.3rem;
+	margin-bottom: 1.7rem;
+}
+
+.text-center {
+	text-align: center;
+}
