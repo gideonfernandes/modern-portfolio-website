@@ -1,3 +1,4 @@
+// Main Utilities
 .container {
 	max-width: $website-width;
 	overflow: hidden;
@@ -5,6 +6,16 @@
 	padding: 0 1.5rem;
 }
 
+.lead {
+	font-size: 1.3rem;
+	margin-bottom: 1.7rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+// Buttons & Submits
 %btn-shared {
 	display: inline-block;
 	border: 0;
@@ -39,11 +50,17 @@ input[class^='btn-']:hover {
 	background-color: $main-color;
 }
 
-.lead {
-	font-size: 1.3rem;
-	margin-bottom: 1.7rem;
+// Margin & Padding
+.my {
+	&-1 { margin: 1rem 0 }
+	&-2 { margin: 2rem 0 }
+	&-3 { margin: 3rem 0 }
+	&-4 { margin: 4rem 0 }
 }
 
-.text-center {
-	text-align: center;
+.py {
+	&-1 { padding: 1rem 0 }
+	&-2 { padding: 2rem 0 }
+	&-3 { padding: 3rem 0 }
+	&-4 { padding: 4rem 0 }
 }

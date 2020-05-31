@@ -90,3 +90,49 @@ a {
 		}
 	}
 }
+
+// Home Sections
+#home {
+	& > #section-one {
+		& .specials {
+			margin-top: 3rem;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: repeat(4, 1fr);
+
+			& i.fas {
+				color: $main-color;
+			}
+		}
+	}
+
+	& > #section-two {
+		& .stats {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		
+			& > ul {
+				&:nth-of-type(odd) {
+					background-color: $light-color;
+				}
+
+				&:nth-of-type(even) {
+					background-color: $medium-color;
+				}
+
+				& li {
+					line-height: 2;
+
+					&.stats-title {
+						font-size: 1.5rem;
+					}
+
+					&.stats-number {
+						font-size: 2rem;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
