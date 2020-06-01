@@ -30,12 +30,6 @@ a {
 	color: $dark-color;
 }
 
-// Logo
-#logo {
-	width: 90px;
-	height: 90px;
-}
-
 // Header styles
 #header {
 	// Header Home styles
@@ -43,6 +37,12 @@ a {
 		color: white;
 		background: $bg-image no-repeat center right/cover;
 		height: 100vh;
+
+		// Logo Home
+		#logo {
+			width: 90px;
+			height: 90px;
+		}
 
 		// Header Content styles
 		#header-content {
@@ -54,9 +54,19 @@ a {
 			}
 		}
 	}
+
 	// Header Inner styles
 	&-inner {
-		
+		color: white;
+		background: $bg-image no-repeat 15% 30% /cover;
+		height: 6.5rem;
+		border-bottom: 3px solid $main-color;
+
+		// Logo Inner Pages
+		#logo {
+			width: 78px;
+			height: 78px;
+		}
 	}
 }
 
@@ -184,6 +194,30 @@ a {
 				background-color: $main-color;
 				transition: all 0.8s ease-in;
 			}
+		}
+	}
+}
+
+// About Sections styles
+#about {
+	& > #section-one {
+		& .infos {
+			display: grid;
+			grid-template-areas:
+			'bio-image bio-text bio-text'
+			'award-one award-two award-three';
+			grid-gap: 1.2rem;
+
+			// Grid Areas
+			& > .bio-image { grid-area: bio-image }
+			& > .bio-text {
+				grid-area: bio-text;
+				padding: 0.8rem;
+				border-left: 3px solid $main-color;
+			}
+			& > .award-one { grid-area: award-one }
+			& > .award-two { grid-area: award-two }
+			& > .award-three { grid-area: award-three }
 		}
 	}
 }
