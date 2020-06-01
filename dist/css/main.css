@@ -17,8 +17,7 @@
   text-align: center;
   padding-bottom: 0.5rem;
   font-weight: 100;
-  text-transform: uppercase;
-  color: #202020; }
+  text-transform: uppercase; }
 
 .bottom-line {
   display: block;
@@ -219,6 +218,42 @@ a {
     grid-area: award-two; }
   #about > #section-one .infos > .award-three {
     grid-area: award-three; }
+  #about > #section-one .infos > .award-one i.fas, #about > #section-one .infos > .award-two i.fas, #about > #section-one .infos > .award-three i.fas {
+    color: #ffbc00; }
+#about > #section-two .progress {
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ccc;
+  overflow: hidden;
+  margin-bottom: 0.6rem; }
+  #about > #section-two .progress > div {
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-color: #ffbc00; }
+#about > #section-three .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #about > #section-three .about-logos > img {
+    width: 70%; }
+#about > #section-four .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.6rem; }
+  #about > #section-four .testimonials > div > p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about > #section-four .testimonials > div > ul {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem; }
+    #about > #section-four .testimonials > div > ul > li > img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 0.5rem; }
 
 #main-footer {
   display: flex;

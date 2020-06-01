@@ -218,6 +218,69 @@ a {
 			& > .award-one { grid-area: award-one }
 			& > .award-two { grid-area: award-two }
 			& > .award-three { grid-area: award-three }
+
+			// Awards Icon style
+			& > .award-one i.fas,
+			& > .award-two i.fas,
+			& > .award-three i.fas {
+				color: $main-color;
+			}
+		}
+	}
+
+	& > #section-two {
+		& .progress {
+			height: 20px;
+			border-radius: 5px;
+			background-color: $medium-color;
+			overflow: hidden;
+			margin-bottom: 0.6rem;
+
+			& > div {
+				height: 100%;
+				text-align: center;
+				color: white;
+				background-color: $main-color;
+			}
+		}
+	}
+
+	& > #section-three {
+		& .about-logos{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 2rem;
+
+			& > img {
+				width: 70%;
+			}
+		}
+	}
+
+	& > #section-four {
+		& .testimonials{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 0.6rem;
+
+			& > div > p {
+				border: 1px solid $medium-color;
+				border-radius: 5px;
+				padding: 0.5rem;
+			}
+
+			& > div > ul {
+				display: flex;
+				align-items: center;
+				margin-top: 1rem;
+
+				& > li > img {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					margin-right: 0.5rem;
+				}
+			}
 		}
 	}
 }
