@@ -91,7 +91,7 @@ a {
 	}
 }
 
-// Home Sections
+// Home Sections styles
 #home {
 	& > #section-one {
 		& .specials {
@@ -132,6 +132,90 @@ a {
 						font-weight: bold;
 					}
 				}
+			}
+		}
+	}
+
+	& > #section-three {
+		& .process {
+			display: grid;
+			grid-gap: 1.5rem;
+			grid-template-columns: repeat(4, 1fr);
+			text-align: center;
+
+			&-icon {
+				position: relative;
+				width: 70px;
+				height: 70px;
+				line-height: 70px;
+				text-align: center;
+				border-radius: 50%;
+				padding: 2rem;
+				color: set-color-by-lightness($dark-color);
+				background-color: $dark-color;
+				transition: all 0.5s ease-in;
+
+				&:hover {
+					width: 90px;
+					height: 90px;
+					line-height: 90px;
+					color: $dark-color;
+					background-color: $main-color;
+
+					& .process-step {
+						color: $light-color;
+						background-color: $dark-color;
+					}
+				}
+			}
+
+			&-step {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 16px;
+				height: 16px;
+				line-height: 16px;
+				text-align: center;
+				border-radius: 50%;
+				font-size: 26px;
+				padding: 1rem;
+				color: $dark-color;
+				background-color: $main-color;
+				transition: all 0.8s ease-in;
+			}
+		}
+	}
+}
+
+// Footer styles
+#main-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	background-color: $dark-color;
+	height: 5rem;
+
+	& > p {
+		font-size: 1.1rem;
+	}
+
+	& > .social > a {
+		color: white;
+			& > i.fab {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			border-radius: 50%;
+			border: 2px solid white;
+			margin-right: 1rem;
+			padding: 0.5rem;
+			transition: background-color 0.2s ease-in;
+
+			&:hover {
+				background-color: $main-color;
 			}
 		}
 	}
