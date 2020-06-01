@@ -1,0 +1,16 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase.jpg');
+
+// Set Color by Current Lightness
+@function set-color-by-lightness($color) {
+	@if (lightness($color) > 50) {
+		@return $dark-color;
+	} @else {
+		@return $light-color;
+	}
+}
