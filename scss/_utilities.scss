@@ -81,3 +81,26 @@ input[class^='btn-']:hover {
 	&-3 { padding: 3rem 0 }
 	&-4 { padding: 4rem 0 }
 }
+
+// Background Colors
+.bg {
+	&-main {
+		color: set-color-by-lightness($main-color);
+		background-color: $main-color;
+	}
+
+	&-light {
+		color: set-color-by-lightness($light-color);
+		background-color: $light-color;
+	}
+
+	&-medium {
+		color: set-color-by-lightness($medium-color);
+		background-color: $medium-color;
+	}
+
+	&-dark {
+		color: set-color-by-lightness($dark-color);
+		background-color: $dark-color;
+	}
+}
