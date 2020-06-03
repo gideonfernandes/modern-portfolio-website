@@ -382,4 +382,80 @@ a {
       #main-footer > .social > a > i.fab:hover {
         background-color: #ffbc00; }
 
+@media (max-width: 800px) {
+  #header-home {
+    height: 32rem; }
+    #header-home #header-content {
+      padding-top: 5rem; }
+      #header-home #header-content > h1 {
+        font-size: 3rem; }
+
+  #home > #section-one .specials,
+  #home > #section-two .stats,
+  #home > #section-three .process,
+  #about > #section-four .testimonials,
+  #gallery {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 580px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav > ul > li {
+      padding: 1rem; }
+
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffbc00;
+    background-position: 20% 30%; }
+    #header-home #header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+
+  #home > #section-one .specials,
+  #home > #section-two .stats,
+  #home > #section-three .process,
+  #about > #section-four .testimonials,
+  #contact > #section-two .contact-info,
+  #gallery {
+    grid-template-columns: 1fr; }
+
+  #home > #section-one .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    #home > #section-one .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home > #section-two .stats div {
+    padding: 2rem 0 1rem 0; }
+
+  #about > #section-one .infos {
+    grid-template-areas: 'bio-image' 'bio-text' 'award-one' 'award-two' 'award-three'; }
+  #about > #section-three {
+    display: none; }
+
+  #contact > #section-one .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #contact > #section-two div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    #contact > #section-two div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact > #section-three h1 {
+    font-size: 2rem; }
+
+  #main-footer {
+    height: 7rem;
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem; }
+    #main-footer > p {
+      margin: 1rem 0; } }
+@media (max-height: 330px) {
+  #header #header-content h1 {
+    font-size: 2rem; } }
+
 /*# sourceMappingURL=main.css.map */
