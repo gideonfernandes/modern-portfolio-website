@@ -286,6 +286,58 @@ a {
 	}
 }
 
+// Contact Sections styles
+#contact {
+	& > #section-one {
+		& .text-fields {
+			display: grid;
+			grid-template-areas:
+			'name email'
+			'subject phone'
+			'message message';
+			grid-gap: 1.2rem;
+			margin-bottom: 1.2rem;
+
+			.text-input {
+				padding: 0.5rem 1rem;
+			}
+
+			.text-input:focus {
+				border: 1.5px solid #ccc;
+			}
+
+			// Grid Areas
+			& > .name-input { grid-area: name; }
+			& > .email-input { grid-area: email; }
+			& > .subject-input { grid-area: subject; }
+			& > .phone-input { grid-area: phone; }
+			& > .message-input {
+				grid-area: message;
+				height: 120px;
+			}
+		}
+		& button[type="submit"] {
+			width: 50%;
+			font-size: 1.2rem;
+		}
+	}
+
+	& > #section-two {
+		& .contact-info {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			text-align: center;
+		}
+	}
+
+	& > #section-three {
+		& h1 {
+			font-size: 4rem;
+			text-align: center;
+		}
+	}
+}
+
 // Footer styles
 #main-footer {
 	display: flex;
