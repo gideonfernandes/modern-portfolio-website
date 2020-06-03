@@ -1,0 +1,160 @@
+
+
+// Tablets & Smaller
+@media (max-width: 800px) {
+  #header {
+    &-home {
+      height: 32rem;
+
+      #header-content {
+        padding-top: 5rem;
+
+        & > h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  // Stack Grid Columns
+  #home > #section-one .specials,
+  #home > #section-two .stats,
+  #home > #section-three .process,
+  #about > #section-four .testimonials,
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Smartphones
+@media (max-width: 580px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    & > ul > li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+
+      #header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home > #section-one .specials,
+  #home > #section-two .stats,
+  #home > #section-three .process,
+  #about > #section-four .testimonials,
+  #contact > #section-two .contact-info,
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+
+  // Home Page
+  #home {
+    & > #section-one {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    & > #section-two {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    & > #section-one {
+      .infos {
+        grid-template-areas:
+          'bio-image'
+          'bio-text'
+          'award-one'
+          'award-two'
+          'award-three';
+      }
+    }
+
+    & > #section-three {
+      display: none;
+    }
+  }
+
+  // Contact Page
+  #contact {
+    & > #section-one {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+
+    & > #section-two {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    & > #section-three {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+
+    & > p {
+      margin: 1rem 0;
+    }
+  }
+}
+
+// Small Screen
+@media (max-height: 330px) {
+  #header {
+    #header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
