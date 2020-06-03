@@ -327,6 +327,37 @@ a {
       border-radius: 50%;
       margin-right: 0.5rem; }
 
+#contact > #section-one .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact > #section-one .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+  #contact > #section-one .text-fields .text-input:focus {
+    border: 1.5px solid #ccc; }
+  #contact > #section-one .text-fields > .name-input {
+    grid-area: name; }
+  #contact > #section-one .text-fields > .email-input {
+    grid-area: email; }
+  #contact > #section-one .text-fields > .subject-input {
+    grid-area: subject; }
+  #contact > #section-one .text-fields > .phone-input {
+    grid-area: phone; }
+  #contact > #section-one .text-fields > .message-input {
+    grid-area: message;
+    height: 120px; }
+#contact > #section-one button[type="submit"] {
+  width: 50%;
+  font-size: 1.2rem; }
+#contact > #section-two .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center; }
+#contact > #section-three h1 {
+  font-size: 4rem;
+  text-align: center; }
+
 #main-footer {
   display: flex;
   justify-content: space-around;
